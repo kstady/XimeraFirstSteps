@@ -6,3 +6,60 @@
 %%  Example:
 %%
 % \newcommand{\R}{\mathbb{R}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{arrows}
+\usepackage{graphicx}
+\usepackage{graphpap}
+\usepackage{amssymb}
+\usepackage{nicematrix}
+
+
+\usepackage[nodisplayskipstretch]{setspace}
+\usepackage{pgfplots}
+\pgfplotsset{compat = newest}
+
+\usepackage{xcolor-material} %For shark
+
+\usepackage{TikZlings}
+\usepackage{tikzducks}
+
+\usepackage{fontawesome5}
+
+\usepackage{geometry}
+
+
+\newcommand{\rulecolor}[1]{\def\CT@arc@{\color{#1}}}
+\definecolor{darkblue}{rgb}{0.4,0.5,0.85}
+\definecolor{blue}{rgb}{0.1,0.3,.95}
+%\definecolor{blue}{rgb}{0.1,0.2,0.90}
+\definecolor{pink}{rgb}{0.6,0.4,0.7}
+\definecolor{green}{rgb}{0.4,0.6,0.5}
+\definecolor{yellow}{rgb}{0.1,0.6,0.8}
+\definecolor{red}{rgb}{0.8,0.1,0.5}
+\definecolor{glaucous}{rgb}{0.38,0.51,0.71}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings}
+\pgfplotsset{soldot/.style={only marks,mark=*, line width=0.2pt, mark size=1.5pt}}
+\pgfplotsset{holdot/.style={fill=white,only marks,mark=*, line width=1.0pt, mark size=1.5pt}}
+
+
+
+\usepackage[utf8]{inputenc}  %needed to define \begin{axis} in tikz pic
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\setlength{\topmargin}{0cm} \setlength{\topskip}{0cm}
+\setlength{\headheight}{0cm} \setlength{\headsep}{0cm}
+\setlength{\oddsidemargin}{0cm} \setlength{\evensidemargin}{0cm}
+\setlength{\footskip}{0cm} \setlength{\textwidth}{17.2cm}
+\setlength{\textheight}{25cm}
+
+\pagestyle{empty} \pagenumbering{none}
