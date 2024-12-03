@@ -1,5 +1,5 @@
 \documentclass[11pt]{ximera}  %Use handout to suppress answers
-\title{Trying this again and again!}
+\title{Trying this once again!}
 
 \begin{document}
 
@@ -36,21 +36,18 @@ $V = \answer{\displaystyle -0.35\cos \left( \frac{\pi x}{2} \right) + 0.45}$
 \begin{question}
 What fraction of the circle is shaded?
 
-%\begin{image}  %Makes circle huge!!  scale=0.1 does not help
-\hspace{0.8in} \begin{tikzpicture}
+\begin{image}  %Makes circle huge!!  scale=0.1 does not help
+\begin{tikzpicture}
 \draw[thick] (0,0) circle [radius=1.3cm];
 \foreach \i in {36,72,...,360}
-  \draw[semithick] (0,0)--(\i:1.3cm);    %The colon signifies that polar coordinates are being used. (60:.75cm) means the point that is at an angle of 60° and a distance of 0.75cm from the origin. Length of radial lines - should match radius above.
-
-
- \draw[thick, fill=glaucous!60] (0,0) --  (36:1.3) arc(36:0:1.3); %To Draw Arc: \draw (x,y) arc (start:stop:radius);
-
- \draw[thick, fill=glaucous!60] (0,0) --  (72:1.3) arc(72:36:1.3); %Colon indicates polar coordintes (angle:length)
- \draw[thick, fill=glaucous!60] (0,0) --  (108:1.3) arc(108:72:1.3);
+ \draw[semithick] (0,0)--(\i:1.3cm);    %The colon signifies that polar coordinates are being used. (60:.75cm) means the point that is at an angle of 60° and a distance of 0.75cm from the origin. Length of radial lines - should match radius above.
+\draw[thick, fill=glaucous!60] (0,0) --  (36:1.3) arc(36:0:1.3); %To Draw Arc: \draw (x,y) arc (start:stop:radius);
+\draw[thick, fill=glaucous!60] (0,0) --  (72:1.3) arc(72:36:1.3); %Colon indicates polar coordintes (angle:length)
+\draw[thick, fill=glaucous!60] (0,0) --  (108:1.3) arc(108:72:1.3);
 % \draw[fill=glaucous] (0,0) -- (360:1.5) arc(360:324:1.5);
 
 \end{tikzpicture}
-%\end{image}
+\end{image}
 
 \begin{multipleChoice}
 \choice[correct]{$\displaystyle \frac{3}{10}$}
@@ -59,7 +56,6 @@ What fraction of the circle is shaded?
 \end{multipleChoice}
 
 \end{question}
-
 
 
 \end{document} 
